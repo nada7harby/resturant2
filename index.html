@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- =============================header section starts  ==================================.    -->
+
+    <div class="row m-0">
+      <div class="col-lg-3 col-md-2 col-sm-1 text-center">
+        <span class="logo">
+          <i class="text-success fas fa-utensils m-1"></i>Remo</span
+        >
+      </div>
+      <div class="col-lg-4 col-md-3 col-sm-3 m-1 main">
+        <form class="form-group">
+          <input type="search" placeholder="search" class="form-control" />
+        </form>
+      </div>
+      <div class="col-lg-3 col-md-2 col-sm-1 text-right">
+        <div class="dropdown">
+          <div class="btn dropdown-toggle" id="x" data-toggle="dropdown">
+            <i class="fas fa-user main2 text-success"></i>
+          </div>
+          <div class="dropdown-menu" aria-labelledby="x">
+            <span
+              class="dropdown-item btn btn-primary"
+              data-toggle="modal"
+              data-target="#youModal"
+            >
+              login
+            </span>
+            <span
+              class="dropdown-item btn btn-primary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Register
+            </span>
+          </div>
+        </div>
+        <!---->
+        <div class="modal text-left" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Register</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- -->
+              <form class="m-2" width="90%">
+                <div class="form-group">
+                  <label>Enter your Name</label><br />
+                  <input
+                    type="text"
+                    placeholder="your Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Enter your password</label><br />
+                  <input
+                    type="password"
+                    placeholder="your password"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Enter your Email</label><br />
+                  <input
+                    type="text"
+                    placeholder="your Email"
+                    class="form-control"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label>Enter your country</label><br />
+                  <input
+                    type="text"
+                    placeholder="your country"
+                    class="form-control"
+                  />
+                </div>
+              </form>
+
+              <!--  -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-dismiss="modal"
+                >
+                  submit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal text-left" id="youModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- -->
+              <div class="modal-header">
+                <h4 class="modal-title">login in</h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+
+              <!-- -->
+              <form class="m-2">
+                <div class="form-group">
+                  <label>Enter your Name</label><br />
+                  <input
+                    type="text"
+                    placeholder="your Name"
+                    class="form-control"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Enter your password</label><br />
+                  <input
+                    type="password"
+                    placeholder="your password"
+                    class="form-control"
+                  />
+                </div>
+              </form>
+
+              <!--  -->
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-success"
+                  data-dismiss="modal"
+                >
+                  submit
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mother m-0">
+      <div class="btn-group col-6 first">
+        <div class="aaa btn btn-outline-success" style="border: none">
+          <a href="#home">Home</a>
+        </div>
+        <div class="aaa btn btn-outline-success" style="border: none">
+          <a href="#about">About</a>
+        </div>
+        <div class="aaa btn btn-outline-success" style="border: none">
+          <a href="#parts">The Parts</a>
+        </div>
+        <div class="aaa btn btn-outline-success" style="border: none">
+          <a href="#order">Order</a>
+        </div>
+      </div>
+    </div>
+    <!--====================================== header section ends ======================================     -->
+    <!--====================== HOme section starts===========================      -->
+    <div class="mother2">
+      <div class="container">
+        <div class="contain">
+          <h1>Remo</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit natus
+            dolor cumque. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sit natus dolor cumque
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Home section ends      -->
+    <!-- about section starts      -->
+    <h1 class="text-success nnn">About</h1>
+    <div class="container" id="about">
+      <div class="info">
+        <p>
+          is an American fast food restaurant chain headquartered in Louisville,
+          Kentucky that specializes in fried chicken. It is the world's
+          second-largest restaurant chain
+        </p>
+        <h2 class="text-center text-success p-2">Our Member</h2>
+
+        <div class="row justify-content-around m-0">
+          <div class="card col-md-4 col-sm-6 m-2" style="width: 22rem">
+            <img src="21.jfif" alt="" class="card-img" />
+            <div class="card-body text-center">
+              <div class="card-title">Iyad Abdullah</div>
+              <div class="card-text">
+                He is Considered The Chairman Of The Board Of Directors Of The
+                Company
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6 m-2" style="width: 22rem">
+            <img src="20.jpeg" alt="" class="card-img" />
+            <div class="card-body text-center">
+              <div class="card-title">Nada Harby</div>
+              <div class="card-text">
+                She is Considered The Chairman Of The Board Of Directors Of The
+                Company
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6 m-2" style="width: 22rem">
+            <img src="19.jpeg" alt="" class="card-img" />
+            <div class="card-body text-center">
+              <div class="card-title">Abdullah Mamnsor</div>
+              <div class="card-text">
+                He is Considered The Chairman Of The Board Of Directors Of The
+                Company
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-4 col-sm-6 m-2" style="width: 22rem">
+            <img src="22.png" alt="" class="card-img" />
+            <div class="card-body text-center">
+              <div class="card-title">Murad Muhammad</div>
+              <div class="card-text">
+                He is Considered The Chairman Of The Board Of Directors Of The
+                Company
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <hr />
+    </div>
+    <!-- about section ends      -->
+
+    <!-- parts section starts      -->
+
+    <h1 class="text-success nnn m-3" id="parts">Our Menu</h1>
+    <br />
+    <h2 class="text-center p-2">Steak</h2>
+    <div class="row justify-content-around m-0">
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="3.jpg" alt="" class="card-img p-2" />
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$15.99</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="1.jpg " alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$18.75</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second justify-content-center">
+          <img src="6.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$20.45</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <div
+        class="btn btn-outline-success"
+        data-target="#more"
+        data-toggle="collapse"
+      >
+        More
+      </div>
+    </div>
+    <div class="collapse" id="more">
+      <div class="row justify-content-around m-0">
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="10.jpg" alt="" class="card-img p-2" />
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$20.24</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="8.jpg " alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$23.75</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second justify-content-center">
+            <img src="9.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$27.15</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+    </div>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <h2 class="text-center p-2">chicken</h2>
+    <div class="row justify-content-around m-0">
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="ch3.jpg" alt="" class="card-img p-2" />
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$25.99</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="ch1.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$17.55</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second justify-content-center">
+          <img src="ch6.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$15.22</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <div
+        class="btn btn-outline-success"
+        data-target="#more2"
+        data-toggle="collapse"
+      >
+        More
+      </div>
+    </div>
+    <div class="collapse" id="more2">
+      <div class="row justify-content-around m-0">
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="ch7.jpg" alt="" class="card-img p-2" />
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$21.32</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="ch2.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$15.55</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second justify-content-center">
+            <img src="c4.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$19.22</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+    </div>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <h2 class="text-center p-2">Fish</h2>
+    <div class="row justify-content-around m-0">
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="fi2.jpg" alt="" class="card-img p-2" />
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$15.99</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="fi3.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$18.75</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second justify-content-center">
+          <img src="fi7.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$20.45</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <div
+        class="btn btn-outline-success"
+        data-target="#more3"
+        data-toggle="collapse"
+      >
+        More
+      </div>
+    </div>
+    <div class="collapse" id="more3">
+      <div class="row justify-content-around m-0">
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="f8.jpg" alt="" class="card-img p-2" />
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$26.19</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="f6.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$22.75</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second justify-content-center">
+            <img src="fi9.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$29.45</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+    </div>
+    <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <h2 class="text-center p-2">Others</h2>
+    <div class="row justify-content-around m-0">
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="15.jpg" alt="" class="card-img p-2" />
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$15.99</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second">
+          <img src="12.jpg " alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$20.75</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card second justify-content-center">
+          <img src="16.jpg" alt="" class="card-img p-2" />
+
+          <div class="card-body text-center">
+            <h3 class="card-title">tasty food</h3>
+            <div class="text-success">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
+            </div>
+            <div class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+              sequi corrupti corporis quaerat voluptatem ipsam neque labore
+              modi<br />
+              <span style="color: #e53935; font-size: 40px">$16.45</span>
+              <div class="more">
+                <div class="btn btn-outline-success">Buy Now</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="more">
+      <div
+        class="btn btn-outline-success"
+        data-target="#more4"
+        data-toggle="collapse"
+      >
+        More
+      </div>
+    </div>
+    <div class="collapse" id="more4">
+      <div class="row justify-content-around m-0">
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="s2.jpg" alt="" class="card-img p-2" />
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$15.99</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second">
+            <img src="s1.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$20.75</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="card second justify-content-center">
+            <img src="s3.jpg" alt="" class="card-img p-2" />
+
+            <div class="card-body text-center">
+              <h3 class="card-title">tasty food</h3>
+              <div class="text-success">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,
+                sequi corrupti corporis quaerat voluptatem ipsam neque labore
+                modi<br />
+                <span style="color: #e53935; font-size: 40px">$16.45</span>
+                <div class="more">
+                  <div class="btn btn-outline-success">Buy Now</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+    </div>
+    <!--------------------------------------------------- parts section ends--------------------------------      -->
+    <!--================ slide start==================================================-->
+
+    <div class="mother4">
+      <div class="container">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+            <li data-target="#demo" data-slide-to="3"></li>
+            <li data-target="#demo" data-slide-to="4"></li>
+            <li data-target="#demo" data-slide-to="5"></li>
+          </ul>
+
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="m3.jpg" alt="Los Angeles" width="1100px" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img src="c5.jpg" alt="Chicago" width="1100px" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img src="7.jpg" alt="New York" width="1100px" height="500" />
+            </div>
+
+            <div class="carousel-item">
+              <img src="f4.jpg" alt="New York" width="1100px" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img src="22.jpg" alt="New York" width="1100px" height="500" />
+            </div>
+            <div class="carousel-item">
+              <img src="7.jpg" alt="New York" width="1100px" height="500" />
+            </div>
+          </div>
+
+          <!--------------------- Left and right controls ------------------------------------------->
+          <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------- slide end--------------------------------------------------->
+
+    <!--==========================================================Form start =======================================================-->
+    <div class="row justify-content-around m-0">
+      <div class="col-md-3 col-sm-6">
+        <img
+          src="d1.png"
+          alt="del"
+          width="500px"
+          height="700px"
+          class="delivary"
+        />
+      </div>
+      <div class="col-md-6 col-sm-8">
+        <form class="order" id="order" action="form.php" method="POST">
+          <div class="form-group">
+            <label>Enter your name</label>
+            <input
+              type="text"
+              placeholder="your Name"
+              class="form-control"
+              name="name"
+            />
+          </div>
+          <div class="form-group">
+            <label>Enter your Number</label>
+            <input
+              type="text"
+              placeholder="your number"
+              class="form-control"
+              name="number"
+            />
+          </div>
+          <div class="form-group">
+            <label>Enter your Address</label>
+            <input
+              type="text"
+              placeholder="your Address"
+              class="form-control"
+              name="address"
+            />
+          </div>
+          <div class="form-group">
+            <label>Enter your Email</label>
+            <input
+              type="text"
+              placeholder="your Email"
+              class="form-control"
+              name="email"
+            />
+          </div>
+          <div class="form-group">
+            <label>Enter your Order</label>
+            <textarea
+              type="text"
+              class="form-control"
+              style="height: 100px; color: #979292"
+              name="order"
+            >
+ your Order</textarea
+            >
+          </div>
+          <input
+            type="submit"
+            value="submit"
+            class="submit btn btn-outline-success"
+          />
+        </form>
+      </div>
+    </div>
+    <br />
+    <div class="container">
+      <hr />
+    </div>
+    <!--==========================================================Form end =======================================================-->
+    <!--===========================================================footer start===================================================-->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-around m-0">
+          <div class="col">
+            <h3>Location</h3>
+            <ul>
+              <li>Egypt</li>
+              <li>France</li>
+              <li>India</li>
+              <li>Russia</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>contact us</h3>
+            <ul>
+              <li>Remo410@gmail.com</li>
+              <li>nada410@gmail.com</li>
+              <li>015235589</li>
+              <li>012453692</li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Quick Link</h3>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#order">Order</a></li>
+              <li><a href="#parts">The parts</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <h3>Follow Us</h3>
+            <ul>
+              <li><a href="#">Facebook </a></li>
+              <li><a href="#">Gmail </a></li>
+              <li><a href="#">Yahoo </a></li>
+              <li><a href="#">linled In </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copy p-2">copy Right &copy; Nada Harby 2021</div>
+    </footer>
+    <!--===========================================================footer End===================================================-->
+  </body>
+</html>
